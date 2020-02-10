@@ -1,0 +1,196 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 34px;
+  padding-left: 50px;
+  line-height: 1;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 32px;
+  background-image: url("/images/logo.svg");
+  background-size: 200px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+body {
+  line-height: 1.4;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  margin-bottom: 70px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    margin-bottom: 100px;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+footer > a {
+  margin-right: 16px;
+}
+
+footer > a:last-child {
+  margin-right: 0px;
+}
+
+footer > a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+}
+
+footer i.fab {
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: white;
+  margin-top: 30px;
+}
+
+body {
+  margin-bottom: 26px;
+  padding: 40px;
+  background-color: #674bb1;
+  background-image: url("/images/bg-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin-bottom: 26px;
+    padding: 60px 80px 40px 80px;
+    background-image: url("/images/bg-desktop.svg");
+  }
+}
+
+main {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    text-align: left;
+  }
+}
+
+.heroImage img {
+  width: 100%;
+}
+
+.heroText {
+  line-height: 1.75;
+}
+
+@media screen and (min-width: 1024px) {
+  .heroText {
+    padding-left: 60px;
+  }
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+}
+
+a.cta {
+  display: inline-block;
+  position: relative;
+  margin-top: 20px;
+  min-width: 200px;
+  padding: 16px;
+  background: white;
+  color: #674bb1;
+  line-height: 1;
+  text-align: center;
+  border-radius: 40px;
+  -webkit-box-shadow: 5px 5px 10px #3d2d69;
+          box-shadow: 5px 5px 10px #3d2d69;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 50ms ease-in-out;
+  transition: 50ms ease-in-out;
+}
+
+@media screen and (min-width: 1024px) {
+  a.cta {
+    padding: 20px 66px;
+  }
+}
+
+a.cta:hover {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+/*# sourceMappingURL=style.css.map */
